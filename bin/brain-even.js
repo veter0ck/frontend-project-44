@@ -1,17 +1,26 @@
 import readlineSync from 'readline-sync';
+import name from '../src/cli.js';
 
 const brain_even = () => {
+  const userName = name();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
-    const number = Math.floor(Math.random * 100);
-    const userAnswer = readlineSync.question('Question: ');
-    if (number % 2 === 0 && userAnswer === 'yes') {
+    const number = Math.floor(Math.random() * 100);
+    console.log(`Question: ${number}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if ((number % 2 === 0 && userAnswer === 'yes') || (number % 2 !== 0 && userAnswer === 'no')) {
       console.log('Correct!');
-    } else if (number % 2 !== 0 && userAnswer === 'no') {
-      console.log('Correct!');
-    } else {
-      console.log('Not correct!');
-      console.log('Congratulations, you lost!');
+    } else if (number % 2 === 0 && userAnswer === 'no'){
+      console.log("'no' is wrong answer ;(. Correct answer was 'yes'.");
+      console.log(`Let's try again, ${userName}!`);
+      return;
+    } else if (number % 2 !== 0 && userAnswer === 'yes') {
+      console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
+      console.log(`Let's try again, ${userName}!`);
+      return;
     }
   }
+  console.log(`Congratulations, ${userName}!`);
 };
+
+brain_even();
