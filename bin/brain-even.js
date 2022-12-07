@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import brainEven from '../src/be.js';
+import brainEven from '../src/index.js';
 
 brainEven();
