@@ -1,9 +1,10 @@
 import readlineSync from 'readline-sync';
-import name from './cli.js';
+import greeting from './cli.js';
 
-const brainEven = () => {
-  const countOfRound = 3;
-  const userName = name();
+const countOfRound = 3;
+
+const brainEven = () => {  
+  const userName = greeting();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   for (let i = 0; i < countOfRound; i += 1) {
