@@ -1,11 +1,10 @@
 import readlineSync from 'readline-sync';
 import greeting from './cli.js';
 
-const countOfRound = 3;
-
 const startGame = (gameRules, newRound) => {
   const userName = greeting();
   console.log(gameRules);
+  const countOfRound = 3;
 
   for (let currentRound = 0; currentRound < countOfRound; currentRound += 1) {
     const [question, answer] = newRound();
