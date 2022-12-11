@@ -3,27 +3,21 @@ import greeting from './cli.js';
 
 const countOfRound = 3;
 
-const brainEven = () => {  
+const startGame = (gameRules, newRound) => {
   const userName = greeting();
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log(gameRules);
 
-  for (let i = 0; i < countOfRound; i += 1) {
-    const number = Math.floor(Math.random() * 100);
-    console.log(`Question: ${number}`);
+  for (let currentRound = 0; currentRound < countOfRound; currentRound += 1) {
+    const [question, answer] = newRound();
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if ((number % 2 === 0 && userAnswer === 'yes') || (number % 2 !== 0 && userAnswer === 'no')) {
-      console.log('Correct!');
-    } else if (number % 2 === 0 && userAnswer === 'no') {
-      console.log("'no' is wrong answer ;(. Correct answer was 'yes'.");
-      console.log(`Let's try again, ${userName}!`);
-      return;
-    } else if (number % 2 !== 0 && userAnswer === 'yes') {
-      console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
-      console.log(`Let's try again, ${userName}!`);
+    if (userAnswer !== answer) {
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}.`);
       return;
     }
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default brainEven;
+export default startGame();
