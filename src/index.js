@@ -19,4 +19,4 @@ const startGame = (gameRules, newRound) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default startGame();
+export default startGame;
