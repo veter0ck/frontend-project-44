@@ -3,4 +3,19 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/b15d3e6dc27a1855fdf6/maintainability)](https://codeclimate.com/github/veter0ck/frontend-project-44/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/b15d3e6dc27a1855fdf6/test_coverage)](https://codeclimate.com/github/veter0ck/frontend-project-44/test_coverage)
 
-https://asciinema.org/a/3zfp1lQo1DQSds5L1ciXIw82H
+# Brain-games
+
+Brain games is a set of five console games based on popular mobile brain training apps. Each game asks questions that need to be answered correctly. After three correct answers, you will win. Wrong answers end your game and offer to play it again.
+
+### Available games:
+
+1. Definition of an even number.
+2. Calculator. Arithmetic expressions to be evaluated.
+
+### Definition of an even number.
+
+<video>
+
+### Calculator.
+
+<video>
