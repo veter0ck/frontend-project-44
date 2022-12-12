@@ -18,4 +18,4 @@ Brain games is a set of five console games based on popular mobile brain trainin
 
 ### Calculator.
 
-<video>
+[![asciicast](https://asciinema.org/a/HSSyliPCjFCEdale85U6dG1Re.svg)](https://asciinema.org/a/HSSyliPCjFCEdale85U6dG1Re)
