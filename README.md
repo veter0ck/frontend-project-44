@@ -19,3 +19,23 @@ Brain games is a set of five console games based on popular mobile brain trainin
 ### Calculator.
 
 [![asciicast](https://asciinema.org/a/HSSyliPCjFCEdale85U6dG1Re.svg)](https://asciinema.org/a/HSSyliPCjFCEdale85U6dG1Re)
+
+## Setup
+
+```bash
+make install
+```
+
+### Commands for launching
+
+1. Definition of an even number.
+
+```bash
+brain-even
+```
+
+2. Calculator. Arithmetic expressions to be evaluated.
+
+```bash
+brain-calc
+```
