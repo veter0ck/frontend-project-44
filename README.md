@@ -20,6 +20,10 @@ Brain games is a set of five console games based on popular mobile brain trainin
 
 [![asciicast](https://asciinema.org/a/HSSyliPCjFCEdale85U6dG1Re.svg)](https://asciinema.org/a/HSSyliPCjFCEdale85U6dG1Re)
 
+### Finding the Greatest Common Divisor.
+
+[![asciicast](https://asciinema.org/a/pI4qIccxfWLLy8o1OnRNMD6BA.svg)](https://asciinema.org/a/pI4qIccxfWLLy8o1OnRNMD6BA)
+
 ## Setup
 
 ```bash
@@ -38,4 +42,10 @@ brain-even
 
 ```bash
 brain-calc
+```
+
+3. Finding the Greatest Common Divisor.
+
+```bash
+brain-gcd
 ```
