@@ -11,6 +11,9 @@ Brain games is a set of five console games based on popular mobile brain trainin
 
 1. Definition of an even number.
 2. Calculator. Arithmetic expressions to be evaluated.
+3. Finding the Greatest Common Divisor.
+4. Arithmetic progression.
+5. Is a prime number?
 
 ### Definition of an even number.
 
@@ -27,6 +30,10 @@ Brain games is a set of five console games based on popular mobile brain trainin
 ### Arithmetic progression.
 
 [![asciicast](https://asciinema.org/a/ORgP5Q0HtZVaHiSy8lshaneZ6.svg)](https://asciinema.org/a/ORgP5Q0HtZVaHiSy8lshaneZ6)
+
+### Is a prime number?
+
+[![asciicast](https://asciinema.org/a/dAAZ8k61qMth6oJmJFD7QOvB8.svg)](https://asciinema.org/a/dAAZ8k61qMth6oJmJFD7QOvB8)
 
 ## Setup
 
@@ -58,4 +65,10 @@ brain-gcd
 
 ```bash
 brain-progression
+```
+
+5. Is a prime number?
+
+```bash
+brain-prime
 ```
