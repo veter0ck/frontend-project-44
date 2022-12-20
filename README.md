@@ -24,6 +24,10 @@ Brain games is a set of five console games based on popular mobile brain trainin
 
 [![asciicast](https://asciinema.org/a/pI4qIccxfWLLy8o1OnRNMD6BA.svg)](https://asciinema.org/a/pI4qIccxfWLLy8o1OnRNMD6BA)
 
+### Arithmetic progression.
+
+[![asciicast](https://asciinema.org/a/ORgP5Q0HtZVaHiSy8lshaneZ6.svg)](https://asciinema.org/a/ORgP5Q0HtZVaHiSy8lshaneZ6)
+
 ## Setup
 
 ```bash
@@ -48,4 +52,10 @@ brain-calc
 
 ```bash
 brain-gcd
+```
+
+4. Arithmetic progression.
+
+```bash
+brain-progression
 ```
