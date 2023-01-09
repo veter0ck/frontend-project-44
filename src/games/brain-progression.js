@@ -20,11 +20,11 @@ const generationProgression = (startOfProgression, stepOfProgression, lengthOfPr
 };
 
 const getQuestionAndAnswer = () => {
-  const stepOfProgression = getRandomNumber(minStep, maxStep);
-  const lengthOfProgression = getRandomNumber(minLength, maxLength);
-  const startOfProgression = getRandomNumber(minStart, maxStart);
+  const step = getRandomNumber(minStep, maxStep);
+  const length = getRandomNumber(minLength, maxLength);
+  const start = getRandomNumber(minStart, maxStart);
 
-  const progression = generationProgression(startOfProgression, stepOfProgression, lengthOfProgression);
+  const progression = generationProgression(start, step, length);
 
   const hiddenIndex = getRandomNumber(minIndex, progression.length - 1);
   const answer = String(progression[hiddenIndex]);
