@@ -6,6 +6,7 @@ const gameDescription = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 const minRange = 0;
 const maxRange = 10;
+const minIndex = 0;
 
 const operatorSelection = (firstNumber, secondNumber, operator) => {
   switch (operator) {
@@ -21,7 +22,7 @@ const operatorSelection = (firstNumber, secondNumber, operator) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const operator = operators[getRandomNumber(minRange, operators.length - 1)];
+  const operator = operators[getRandomNumber(minIndex, operators.length - 1)];
   const firstNumber = getRandomNumber(minRange, maxRange);
   const secondNumber = getRandomNumber(minRange, maxRange);
   const question = `${firstNumber} ${operator} ${secondNumber}`;
