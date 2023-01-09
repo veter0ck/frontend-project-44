@@ -16,10 +16,8 @@ Brain games is a set of five console games based on popular mobile brain trainin
 
 ### Minimum requirements:
 
-```bash
-Node.js v18.12.1
-Keyboard
-```
+*Node.js v18.12.1
+*Keyboard
 
 ## Setup
 
