@@ -1,44 +1,40 @@
-//##########################
-//УБРАТЬ МАГИЧЕСКИЕ ЧИСЛА!!!
-//##########################
-
 import getRandomNumber from '../randomNumber.js';
 import startGame from '../index.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
-const generationProgression = (stepOfProgression, lengthOfProgression) => {
-  const progression = [];
-  progression[0] = getRandomNumber(0, 10);
+const minStep = 1;
+const maxStep = 10;
+const minLength = 5;
+const maxLength = 10;
+const minStart = 0;
+const maxStart = 100;
+const minIndex = 0;
 
-  for (let elementNumber = 1; elementNumber < lengthOfProgression; elementNumber += 1) {
-    progression[elementNumber] = progression[elementNumber - 1] + stepOfProgression;    
+const generationProgression = (startOfProgression, stepOfProgression, lengthOfProgression) => {
+  const progression = [];
+  for (let elementNumber = 0; elementNumber < lengthOfProgression; elementNumber += 1) {
+    progression[elementNumber] = startOfProgression + (stepOfProgression * elementNumber);
   }
   return progression;
 };
 
-const hidingElementOfProgression = (stepOfProgression, lengthOfProgression) => {
-  const progressionWithHiddenElement = generationProgression(stepOfProgression, lengthOfProgression);
-  const selectForHiding = getRandomNumber(0, lengthOfProgression);
-  const hiddenElement = progressionWithHiddenElement[selectForHiding];
-  progressionWithHiddenElement[selectForHiding] = '..';
-  const shortProgression = progressionWithHiddenElement.join(' ');
-  return [hiddenElement, shortProgression];
-};
-
 const getQuestionAndAnswer = () => {
-  const stepOfProgression = getRandomNumber(0, 10);
-  const lengthOfProgression = getRandomNumber(5, 10);
-  const [hiddenElement, shortProgression] = hidingElementOfProgression(stepOfProgression, lengthOfProgression);
-  const question = `${shortProgression}`;
-  const answer = `${hiddenElement}`;
-  generationProgression(stepOfProgression, lengthOfProgression);
-  hidingElementOfProgression(stepOfProgression, lengthOfProgression);
+  const stepOfProgression = getRandomNumber(minStep, maxStep);
+  const lengthOfProgression = getRandomNumber(minLength, maxLength);
+  const startOfProgression = getRandomNumber(minStart, maxStart);
+
+  const progression = generationProgression(startOfProgression, stepOfProgression, lengthOfProgression);
+
+  const hiddenIndex = getRandomNumber(minIndex, progression.length - 1);
+  const answer = String(progression[hiddenIndex]);
+  progression[hiddenIndex] = '..';
+  const question = progression.join(' ');
   return [question, answer];
 };
 
 const runBrainProgression = () => {
   startGame(gameDescription, getQuestionAndAnswer);
-}
+};
 
 export default runBrainProgression;
