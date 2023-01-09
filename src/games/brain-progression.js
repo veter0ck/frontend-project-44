@@ -33,8 +33,8 @@ const getQuestionAndAnswer = () => {
   return [question, answer];
 };
 
-const brainProgression = () => {
+const runBrainProgression = () => {
   startGame(gameDescription, getQuestionAndAnswer);
 }
 
-export default brainProgression;
+export default runBrainProgression;

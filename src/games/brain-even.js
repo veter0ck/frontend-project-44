@@ -11,8 +11,8 @@ const getQuestionAndAnswer = () => {
   return [question, answer];
 };
 
-const brainEven = () => {
+const runBrainEven = () => {
   startGame(gameDescription, getQuestionAndAnswer);
 }
 
-export default brainEven;
+export default runBrainEven;
