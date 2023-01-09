@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/veter0ck/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/veter0ck/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/b15d3e6dc27a1855fdf6/maintainability)](https://codeclimate.com/github/veter0ck/frontend-project-44/maintainability)
 
-# Brain-games 
+# Brain-games
 
 Brain games is a set of five console games based on popular mobile brain training apps. Each game asks questions that need to be answered correctly. After three correct answers, you will win. Wrong answers end your game and offer to play it again.
 
