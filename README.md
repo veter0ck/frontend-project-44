@@ -1,7 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/veter0ck/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/veter0ck/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/b15d3e6dc27a1855fdf6/maintainability)](https://codeclimate.com/github/veter0ck/frontend-project-44/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/b15d3e6dc27a1855fdf6/test_coverage)](https://codeclimate.com/github/veter0ck/frontend-project-44/test_coverage)
 
 # Brain-games
 
@@ -15,29 +14,18 @@ Brain games is a set of five console games based on popular mobile brain trainin
 4. Arithmetic progression.
 5. Is a prime number?
 
-### Definition of an even number.
+### Minimum requirements:
 
-[![asciicast](https://asciinema.org/a/1VD9Ob8575gOBvQOFC8XAqrmC.svg)](https://asciinema.org/a/1VD9Ob8575gOBvQOFC8XAqrmC)
-
-### Calculator.
-
-[![asciicast](https://asciinema.org/a/HSSyliPCjFCEdale85U6dG1Re.svg)](https://asciinema.org/a/HSSyliPCjFCEdale85U6dG1Re)
-
-### Finding the Greatest Common Divisor.
-
-[![asciicast](https://asciinema.org/a/pI4qIccxfWLLy8o1OnRNMD6BA.svg)](https://asciinema.org/a/pI4qIccxfWLLy8o1OnRNMD6BA)
-
-### Arithmetic progression.
-
-[![asciicast](https://asciinema.org/a/ORgP5Q0HtZVaHiSy8lshaneZ6.svg)](https://asciinema.org/a/ORgP5Q0HtZVaHiSy8lshaneZ6)
-
-### Is a prime number?
-
-[![asciicast](https://asciinema.org/a/dAAZ8k61qMth6oJmJFD7QOvB8.svg)](https://asciinema.org/a/dAAZ8k61qMth6oJmJFD7QOvB8)
+```bash
+Node.js v18.12.1
+Keyboard
+```
 
 ## Setup
 
 ```bash
+git clone git@github.com:veter0ck/frontend-project-44.git
+cd frontend-project-44
 make install
 ```
 
@@ -72,3 +60,23 @@ brain-progression
 ```bash
 brain-prime
 ```
+
+### Definition of an even number.
+
+[![asciicast](https://asciinema.org/a/1VD9Ob8575gOBvQOFC8XAqrmC.svg)](https://asciinema.org/a/1VD9Ob8575gOBvQOFC8XAqrmC)
+
+### Calculator.
+
+[![asciicast](https://asciinema.org/a/HSSyliPCjFCEdale85U6dG1Re.svg)](https://asciinema.org/a/HSSyliPCjFCEdale85U6dG1Re)
+
+### Finding the Greatest Common Divisor.
+
+[![asciicast](https://asciinema.org/a/pI4qIccxfWLLy8o1OnRNMD6BA.svg)](https://asciinema.org/a/pI4qIccxfWLLy8o1OnRNMD6BA)
+
+### Arithmetic progression.
+
+[![asciicast](https://asciinema.org/a/ORgP5Q0HtZVaHiSy8lshaneZ6.svg)](https://asciinema.org/a/ORgP5Q0HtZVaHiSy8lshaneZ6)
+
+### Is a prime number?
+
+[![asciicast](https://asciinema.org/a/dAAZ8k61qMth6oJmJFD7QOvB8.svg)](https://asciinema.org/a/dAAZ8k61qMth6oJmJFD7QOvB8)
