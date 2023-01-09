@@ -8,11 +8,11 @@ const operators = ['+', '-', '*'];
 const operatorSelection = (firstNumber, secondNumber, operator) => {
   switch (operator) {
     case '+':
-      return String(firstNumber + secondNumber);
+      return firstNumber + secondNumber;
     case '-':
-      return String(firstNumber - secondNumber);
+      return firstNumber - secondNumber;
     case '*':
-      return String(firstNumber * secondNumber);
+      return firstNumber * secondNumber;
     default:
       return 'Unknown operator';
   }
@@ -23,7 +23,7 @@ const getQuestionAndAnswer = () => {
   const firstNumber = getRandomNumber(0, 10);
   const secondNumber = getRandomNumber(0, 10);
   const question = `${firstNumber} ${operator} ${secondNumber}`;
-  const answer = operatorSelection(firstNumber, secondNumber, operator);
+  const answer = String(operatorSelection(firstNumber, secondNumber, operator));
   return [question, answer];
 };
 

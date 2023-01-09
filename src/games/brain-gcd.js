@@ -11,14 +11,14 @@ const searchGcd = (firstNumber, secondNumber) => {
       secondNumber = secondNumber % firstNumber;
     }
   }
-  return String(firstNumber + secondNumber);
+  return firstNumber + secondNumber;
 };
 
 const getQuestionAndAnswer = () => {
   const firstNumber = getRandomNumber(0, 10);
   const secondNumber = getRandomNumber(0, 10);
   const question = `${firstNumber} ${secondNumber}`;
-  const answer = searchGcd(firstNumber, secondNumber);
+  const answer = String(searchGcd(firstNumber, secondNumber));
   return [question, answer];
 };
 
