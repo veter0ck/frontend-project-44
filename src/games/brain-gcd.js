@@ -7,14 +7,10 @@ const minRange = 0;
 const maxRange = 10;
 
 const searchGcd = (firstNumber, secondNumber) => {
-  while (firstNumber !== 0 && secondNumber !== 0) {
-    if (firstNumber > secondNumber) {
-      firstNumber = firstNumber % secondNumber;
-    } else {
-      secondNumber = secondNumber % firstNumber;
-    }
+  if (!secondNumber) {
+    return firstNumber;
   }
-  return firstNumber + secondNumber;
+  return searchGcd(secondNumber, firstNumber % secondNumber);
 };
 
 const getQuestionAndAnswer = () => {
