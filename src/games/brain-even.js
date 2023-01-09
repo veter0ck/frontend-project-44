@@ -1,4 +1,4 @@
-import randomNumber from '../randomNumber.js';
+import getRandomNumber from '../randomNumber.js';
 import startGame from '../index.js'
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -6,7 +6,7 @@ const gameDescription = 'Answer "yes" if the number is even, otherwise answer "n
 const isEven = (num) => num % 2 === 0;
 
 const getQuestionAndAnswer = () => {
-  const question = randomNumber(1, 100);
+  const question = getRandomNumber(1, 100);
   const answer = isEven(question)? 'yes' : 'no';
   return [question, answer];
 };

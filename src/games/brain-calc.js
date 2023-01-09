@@ -1,4 +1,4 @@
-import randomNumber from '../randomNumber.js';
+import getRandomNumber from '../randomNumber.js';
 import startGame from '../index.js'
 
 const gameDescription = 'What is the result of the expression?';
@@ -19,9 +19,9 @@ const operatorSelection = (firstNumber, secondNumber, operator) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const operator = operators[randomNumber(0, 2)];
-  const firstNumber = randomNumber(0, 10);
-  const secondNumber = randomNumber(0, 10);
+  const operator = operators[getRandomNumber(0, 2)];
+  const firstNumber = getRandomNumber(0, 10);
+  const secondNumber = getRandomNumber(0, 10);
   const question = `${firstNumber} ${operator} ${secondNumber}`;
   const answer = operatorSelection(firstNumber, secondNumber, operator);
   return [question, answer];
