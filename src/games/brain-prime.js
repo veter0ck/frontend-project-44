@@ -12,7 +12,8 @@ const isPrimeNumber = (number) => {
 
   if (number < 2) {
     isPrime = false;
-  }  
+  }
+
   for (let i = 2; i <= sqrtNumber; i += 1) {
     if (number % i === 0) {
       isPrime = false;
