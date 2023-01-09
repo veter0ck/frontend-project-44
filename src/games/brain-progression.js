@@ -1,5 +1,9 @@
+//##########################
+//УБРАТЬ МАГИЧЕСКИЕ ЧИСЛА!!!
+//##########################
+
 import getRandomNumber from '../randomNumber.js';
-import startGame from '../index.js'
+import startGame from '../index.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
