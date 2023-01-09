@@ -14,7 +14,7 @@ const operatorSelection = (firstNumber, secondNumber, operator) => {
     case '*':
       return firstNumber * secondNumber;
     default:
-      return 'Unknown operator';
+      throw new Error(`Unknown operator: '${operator}'`);
   }
 };
 
