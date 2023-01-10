@@ -8,19 +8,17 @@ const maxRange = 100;
 
 const isPrimeNumber = (number) => {
   const sqrtNumber = Math.sqrt(number);
-  let isPrime = true;
 
   if (number < 2) {
-    isPrime = false;
+    return false;
   }
 
   for (let i = 2; i <= sqrtNumber; i += 1) {
     if (number % i === 0) {
-      isPrime = false;
-      break;
+      return false;
     }
   }
-  return isPrime;
+  return true;
 };
 
 const getQuestionAndAnswer = () => {
