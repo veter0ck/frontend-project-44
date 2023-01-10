@@ -14,7 +14,7 @@ const minIndex = 0;
 const generationProgression = (startOfProgression, stepOfProgression, lengthOfProgression) => {
   const progression = [];
   for (let elementNumber = 0; elementNumber < lengthOfProgression; elementNumber += 1) {
-    progression[elementNumber] = startOfProgression + (stepOfProgression * elementNumber);
+    progression.push(startOfProgression + (stepOfProgression * elementNumber));
   }
   return progression;
 };
