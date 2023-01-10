@@ -8,7 +8,7 @@ const minRange = 0;
 const maxRange = 10;
 const minIndex = 0;
 
-const operatorSelection = (firstNumber, secondNumber, operator) => {
+const calculation = (firstNumber, secondNumber, operator) => {
   switch (operator) {
     case '+':
       return firstNumber + secondNumber;
@@ -26,7 +26,7 @@ const getQuestionAndAnswer = () => {
   const firstNumber = getRandomNumber(minRange, maxRange);
   const secondNumber = getRandomNumber(minRange, maxRange);
   const question = `${firstNumber} ${operator} ${secondNumber}`;
-  const answer = String(operatorSelection(firstNumber, secondNumber, operator));
+  const answer = String(calculation(firstNumber, secondNumber, operator));
   return [question, answer];
 };
 
